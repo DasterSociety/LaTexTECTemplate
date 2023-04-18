@@ -1,14 +1,19 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{TecThesis}[2023/04/18 TEC thesis LaTex class] %yyyy/mm/dd
+
+\LoadClass[english,12pt,oneside,openright]{report}
+
 %%  This style file is to be used when preparing the master thesis in  Master of Science in Intelligent Systems after February, 2015.  Most of the work about formatting is done by this file so the only thing you need to worry about is the content.
 
 \typeout{******************************************************}
-\typeout{** Style file for the Master Thesis in} 
-\typeout{** Master of Science in Intelligent Systems}
+\typeout{** Class file for TEC Ph.D. thesis } 
+%\typeout{** Master of Science in Intelligent Systems}
 \typeout{** Prepared by: Luis Marcelo Fernandez Carrasco}
-\typeout{** Updated by: José Carlos Ortiz Bayliss}
+\typeout{** Updated by: Daniel Hugo Solano Teran}
 \typeout{** Overleaf template by: Carl W. Handlin}
-\typeout{** Center for Intelligent Systems}
+%\typeout{** Center for Intelligent Systems}
 \typeout{** ITESM - Monterrey Campus}
-\typeout{** Version 1.2 - Feb 2015}
+\typeout{** Version 2 - Apr 2023}
 \typeout{******************************************************}
 
 %%  Checks if the report style is being used
@@ -173,7 +178,7 @@
 			School of Engineering and Sciences\\
 			in partial fulfillment of the requirements for the degree of\\
 			\vspace*{0.5cm}
-			Master of Science\\
+			Doctor of Philosophy\\
 			\vspace*{0.5cm}
 			in\\
 			\vspace*{0.5cm}
@@ -364,7 +369,7 @@
 
 %% Inserts the tex file (which is a chapter) in the document
 \newcommand{\insertChapter}[1]{
-	\input{#1}
+	\include{#1}
 	\if@twoside
 		\clearemptydoublepage	
 	\fi
