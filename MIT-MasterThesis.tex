@@ -1,44 +1,9 @@
 %%  This is a sample file that makes use of the class file: "TecThesis" that  is necessary to generate a properly set up document for a thesis at ITESM
 
-\documentclass{TecThesis}   	%% This sets the printing on just one side of a page
-%\documentclass[english,12pt,twoside,openright]{report}    	%%  This sets the printing on both sides of a page
-\usepackage{definitions}      							%%  This is the sty file that is to be used to generate the 	
-															%%	document.  This line is a must!!!
-%\usepackage{times}                							%%  This is the font that the document is to use. This is a must!!!
-%\usepackage[english]{babel}
+\documentclass{TecThesis}   	%% This calls the TecThesis.cls file printing with the options \documentclass[english,12pt,oneside,openright]{report} This sets the printing on one sides of a page
 
-%%  Useful packages to use in your document
-%%  These are optional but I recommend you used them and that you keep them here.
+\usepackage{definitions}     %%  This calls the definitions.sty file that is to be used to generate the document.  This line is a must!!!
 
-%\usepackage{amsmath}
-%\usepackage{graphics}
-%\usepackage[pdftex]{graphicx}    							%%  This package is necessary to use pdflatex excellent results
-%\usepackage{url}
-%\usepackage{amsfonts}
-
-%% Definition of new commands
-%\newcommand{\field}[1]{\mathbb{#1}}
-%\renewcommand{\thefootnote}{\alph{footnote}}
-  
-%%  Here you set up the variables according to your work
-%\advisor{Dr. Name-Last-Name}                             			%%  Your advisor's name
-%\advisorInstitution{Tecnol\'{o}gico de Monterrey}           			%%  Your advisor's institution
-%\committeeMemberA{Committee member A's name}                   	%%  Committee member A's name
-%\committeeMemberAInstitution{Committee member A's institution}    %%  Committee member A's institution
-%\committeeMemberB{Committee member B's name}                   	%%  Committee member B's name
-%\committeeMemberBInstitution{Committee member B's institution} 	%%  Committee member B's institution
-%\graduateProgramDirector{Dr. Jorge Welti Chanes}        			%%  Graduate program director's name
-%\researchCenter{Autonomous Agents for Ambient intelligence  (AAAmI)}                   								%%  The research center you are associated with
-%\doctoralStudent{First-Middle-Last-Name (Student)}         		%%  Very important: Your name
-%\dissertationMonth{April}                                       %%  The month when you give your thesis
-%\dissertationYear{2023}                                         	%%  The year when you give your thesis
-%\dissertationTitle{Thesis title}								%%  The title of your dissertation
-%\campus{Monterrey}                                            		%%  The campus where you are to give your thesis
-%\major{Intelligent Systems}                                      	%%  Your major
-%\abstractFile{abstractFile}                                     	%%  This is a plain tex file that holds your abstract
-%\acknowledgementFile{acknowledgementFile}                       	%%  This is a plain tex file that holds your acknowledgements
-%\dedicationFile{dedicationFile}                                 	%%  This is a plain tex file that holds your dedication
-%\bibliographyFile{References}                                 		%%  This is a bib file with te bibliography for your dissertation
 
 \begin{document}
 
@@ -54,7 +19,7 @@
 \startContent
 
 % Here you call the files that you prepared in order to get a nice and concise master thesis (i.e., the chapters).  Just call on the command as many times as necessary. Note that it is the same for either thesis chapters or appendices.
-
+%% Other option is just to use \input or \import commands, they are the same.
 \insertChapter{"Chapter_01"}
 \insertChapter{"Chapter_02"}
 \appendix        													%%  This command is needed before you start inserting your 
@@ -62,6 +27,7 @@
 \insertChapter{"Appendix_01"}
 
 % These two last commands are not to be changed either. The first one prepares the bibliography and sets its style while the second inserts the author's vita.
-\insertBibliography
+% If you dont configure the bibliography style use \insertBibliography and be sure to add the .bib file
+\printbibliography
 \insertVita{vitaFile}
 \end{document}

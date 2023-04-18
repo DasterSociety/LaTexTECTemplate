@@ -6,7 +6,7 @@
 %%  This style file is to be used when preparing the master thesis in  Master of Science in Intelligent Systems after February, 2015.  Most of the work about formatting is done by this file so the only thing you need to worry about is the content.
 
 \typeout{******************************************************}
-\typeout{** Class file for TEC Ph.D. thesis } 
+\typeout{** Class file for LaTex ITESM thesis template} 
 %\typeout{** Master of Science in Intelligent Systems}
 \typeout{** Prepared by: Luis Marcelo Fernandez Carrasco}
 \typeout{** Updated by: Daniel Hugo Solano Teran}
@@ -149,7 +149,9 @@
 
 %%  Prepare and generate the first pages of the dissertation.  These pages are NOT to be changed, either as they follow the format required for a doctoral dissertation.
 
-%% Sets up the main first cover
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TEC Cover
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\MainTitle}{
 	\begin{titlepage}
   		\thispagestyle{empty}
@@ -395,7 +397,7 @@
 	
 	\vfill
 	
-	This document was typed in using {\LaTeXe}\footnote{The style file \texttt{phdThesisFormat.sty} used to set up this thesis was prepared by the Center of Intelligent Systems of the {\@tecdemonterrey}, Monterrey Campus} by {\@doctoralStudent}.
+  This document was typed in using {\LaTeXe}\footnote{The style file \texttt{TecThesis.cls} used to set up this thesis was prepared by \textit{daster} based on the .sty files of Center of Intelligent Systems of the {\@tecdemonterrey}, Monterrey Campus} by {\@doctoralStudent}.
 	\if@twoside
 		\clearemptydoublepage	
 	\fi

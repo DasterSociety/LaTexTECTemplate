@@ -7,32 +7,46 @@
 \renewcommand{\thefootnote}{\alph{footnote}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%  Here you set up the variables according to your work
+%%  BIBLIOGRAPHY setup
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[style=ieee,]{biblatex}
+\addbibresource{References.bib} %.bib file for references
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Advisor & Commitee members
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\advisor{Dr. Sergio Camacho Leon}                             			%%  Your advisor's name
-\advisorInstitution{Tecnol\'{o}gico de Monterrey}           			%%  Your advisor's institution
-\committeeMemberA{Committee member A's name}                   	%%  Committee member A's name
-\committeeMemberAInstitution{Committee member A's institution}    %%  Committee member A's institution
-\committeeMemberB{Committee member B's name}                   	%%  Committee member B's name
-\committeeMemberBInstitution{Committee member B's institution} 	%%  Committee member B's institution
-\graduateProgramDirector{Dr. Jorge Welti Chanes}        			%%  Graduate program director's name
+%%  Your advisor's name:
+\advisor{Dr. Advisors Name}			
+%%  Your advisor's institution:
+\advisorInstitution{Tecnol\'{o}gico de Monterrey}           			
+%%  Committee member A's name:
+\committeeMemberA{Committee member A's name}                   	
+%%  Committee member A's institution:
+\committeeMemberAInstitution{Committee member A's institution}    
+%%  Committee member B's name:
+\committeeMemberB{Committee member B's name}                   	
+%%  Committee member B's institution:
+\committeeMemberBInstitution{Committee member B's institution} 	
+%%  Graduate program director's name:
+\graduateProgramDirector{Dr. Jorge Welti Chanes}        			
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Author's / DATE / TITLE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\researchCenter{NA}                   								%%  The research center you are associated with
-\doctoralStudent{Juanito Perez}         		%%  Very important: Your name
-\dissertationMonth{April}                                       %%  The month when you give your thesis
-\dissertationYear{2023}                                         	%%  The year when you give your thesis
-\dissertationTitle{Thesis title}								%%  The title of your dissertation
-\campus{Monterrey}                                            		%%  The campus where you are to give your thesis
-\major{Nanotechnology}                                      	%%  Your major
+%% The research center you are associated with
+\researchCenter{Research Center}
+%%  VERY IMPORTANT: Your name / AUTHOR'S NAME 
+\doctoralStudent{Juanito Perez}
+%%  The month when you give your thesis
+\dissertationMonth{April}
+%%  The year when you give your thesis
+\dissertationYear{2023}                                         
+%%  The title of your dissertation
+\dissertationTitle{Thesis title}								
+%%  The campus where you are to give your thesis
+\campus{Monterrey}                                            		
+%%  Your major
+\major{Nanotechnology}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%  Load the required files such as Abstract, acknowledgements, det,etc.
@@ -41,5 +55,5 @@
 \abstractFile{abstractFile}                                     	%%  This is a plain tex file that holds your abstract
 \acknowledgementFile{acknowledgementFile}                       	%%  This is a plain tex file that holds your acknowledgements
 \dedicationFile{dedicationFile}                                 	%%  This is a plain tex file that holds your dedication
-\bibliographyFile{References}                                 		%%  This is a bib file with te bibliography for your dissertation
+%\bibliographyFile{References}                                 		%%  This is a bib file with te bibliography for your dissertation
 
