@@ -163,11 +163,11 @@
 			{\large School of Engineering and Sciences}\\
 			\vspace*{0.5cm}			
 			\begin{figure}[h]
-				\ifpdf
+				% \ifpdf
 					\centerline{\includegraphics[width=9cm]{escudo-itesm.png}}
-				\else
-					\centerline{\includegraphics[width=9cm]{escudo-itesm.eps}}
-				\fi
+				% \else
+					% \centerline{\includegraphics[width=9cm]{escudo-itesm.eps}}
+				% \fi
 			\end{figure}
 			\vspace*{0.5cm}
 			{\bf \large {\@dissertationTitle}}\\

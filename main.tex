@@ -1,3 +1,12 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LaTeX template for Thesis projects for the ITEMS university
+%% Prepared by: Luis Marcelo Fernandez Carrasco
+%% Updated by: Daniel Hugo Solano Teran
+%% Overleaf template by: Carl W. Handlin}
+%% ITESM - Monterrey Campus}
+%% Version 2.0.1 - Apr 2023}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%  This is a sample file that makes use of the class file: "TecThesis" that  is necessary to generate a properly set up document for a thesis at ITESM
 
 \documentclass{TecThesis}   	%% This calls the TecThesis.cls file printing with the options \documentclass[english,12pt,oneside,openright]{report} This sets the printing on one sides of a page
@@ -9,25 +18,28 @@
 
 % The following commands are not to be changed as they prepare the initial pages of the document. Also, they set up the environment for the real content.  Do not move them or erase them; they are needed for a proper presentation of your dissertation
 
-\MainTitle
-\ThesisCommittee
-\Declaration
-\Dedication
-\Acknowledgements
-\Abstract
-\contentsAndLists
-\startContent
+\MainTitle % This command creates the cover
+\ThesisCommittee %This command adds the Committee members page
+\Declaration % This loads the declaration of authorship
+\Dedication %This load the Dedication page
+\Acknowledgements % This loads the Acknowledgments page
+\Abstract % This loads the abstract page
+\contentsAndLists %This command loads the template format for the Contents table (Index, List of Figures, Lists of Tables)
+\startContent % IMPORTANT!!! Load this command before starting the content to give a proper format
 
 % Here you call the files that you prepared in order to get a nice and concise master thesis (i.e., the chapters).  Just call on the command as many times as necessary. Note that it is the same for either thesis chapters or appendices.
 %% Other option is just to use \input or \import commands, they are the same.
-\insertChapter{"Chapter_01"}
-\insertChapter{"Chapter_02"}
+\include{Chapters/Chapter_01.tex}
+\include{Chapters/Chapter_02.tex}
+%\insertChapter{"Chapter_01"}
+%\insertChapter{"Chapter_02"}
 \appendix        													%%  This command is needed before you start inserting your 
 																	%%	appendices for proper formatting.
-\insertChapter{"Appendix_01"}
+\include{Additional/Appendix_01.tex}
+%\insertChapter{"Appendix_01"}
 
 % These two last commands are not to be changed either. The first one prepares the bibliography and sets its style while the second inserts the author's vita.
 % If you dont configure the bibliography style use \insertBibliography and be sure to add the .bib file
 \printbibliography
-\insertVita{vitaFile}
+\insertVita{./Additional/vitaFile}
 \end{document}
