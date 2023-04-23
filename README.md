@@ -2,7 +2,7 @@
 
 This a template for ITESM thesis projects in English.
 
-This template was inspired by the **phdDissertationFormat.sty** [https://www.overleaf.com/latex/templates/itesm-mit-masterthesis/kbkcbxbhxvwy] file created by Luis Marcelo Fernandez Carrasco. Updated by Daniel Solano (_daster_).
+This template was inspired by the **phdDissertationFormat.sty** [Source code](https://www.overleaf.com/latex/templates/itesm-mit-masterthesis/kbkcbxbhxvwy) file created by Luis Marcelo Fernandez Carrasco. Updated by Daniel Solano (_daster_).
 
 The template uses a LaTeX class file 'TecThesis.cls', and a 'definitions.sty' file.
 
