@@ -23,6 +23,7 @@ The template uses a LaTeX class file 'TecThesis.cls', and a 'definitions.sty' fi
 ├── denfinitions.sty                # .sty file for variable document definitions
 ├── TecThesis.cls                   # LaTeX class file
 ├── escudo-itesm.png                # TEC logo
+├── References.bib                  # Referneces .bib file
 └── README.md
 ```
 
